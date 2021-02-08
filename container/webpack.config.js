@@ -13,9 +13,9 @@ module.exports = {
         new ModuleFederationPlugin({
             name: 'container', // not needed,  added for clarity and only needed for remotes
             remotes: { // lists projects that container can search to get additional code
-                productsApp: 'productsApp@http://localhost:8081/remoteEntry.js',// < url for remoteEntry file
-                // ^^ name relates to name property in products webpack config
-                // ^^ load the file at the listed url if container has eg import abc from products
+                products: 'products@http://localhost:8081/remoteEntry.js',// < url for remoteEntry file
+                // ^^ name relates to name property in products apps webpack config
+                // ^^ load the file at the listed url if container has eg import abc from products in bootstrap file
                 cart: 'cart@http://localhost:8082/remoteEntry.js'
             }
         })

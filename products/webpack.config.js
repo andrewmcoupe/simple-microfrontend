@@ -11,7 +11,7 @@ module.exports = {
             template: './public/index.html'
         }),
         new ModuleFederationPlugin({
-            name: 'productsApp',
+            name: 'products',
             filename: 'remoteEntry.js', // sets the name of the manifest file
             exposes: {
                 './ProductsIndex': './src/index' // aliases filenames
