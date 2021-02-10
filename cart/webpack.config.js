@@ -14,8 +14,9 @@ module.exports = {
             name: 'cart',
             filename: 'remoteEntry.js', // sets the name of the manifest file
             exposes: {
-                './CartShow': './src/index' // aliases filenames
-            }
+                './Cart': './src/index' // aliases filenames
+            },
+            shared: ['faker']
         })
     ]
 };

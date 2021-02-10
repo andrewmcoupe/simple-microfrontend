@@ -1,4 +1,4 @@
 import 'products/ProductsIndex'
-import 'cart/CartShow'
+import 'cart/Cart'
 
 console.log('Container App')
